@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Selectors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/goal.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#quotes">Quotes</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+    <div class="div1">
+        <p target="_blank">People visit a wise man complaining about the same problems over and over again. One day, he decided to tell them a joke and they all roared with laughter.
+  
+        After a few minutes, he told them the same joke and only a few of them smiled.
+  
+        Then he told the same joke for a third time, but no one laughed or smiled anymore.
+        <br>
+        <br>
+        The wise man smiled and said: ‘You can’t laugh at the same joke over and over. So why are you always crying about the same problem?'</p>
+    </div>
+    <div class="div2">
+        <a class="btn btn-grad"  id="hide">HIDE</a>
+        <a class="btn btn-grad" id="show">SHOW</a>        
+    </div>
+
+</body>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p[target='_blank']").hide();         
+        });    
+        $("#show").click(function(){
+           $("p[target='_blank']").show(); 
+        });
+        });
+    </script>
+</html>
